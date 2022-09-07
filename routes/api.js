@@ -15,7 +15,7 @@ router.get('/test', async function(req, res, next) {
 
 router.get('/test2', async function(req, res, next) {
   let username='isrosyaeful';
-  let today = new Date();//new Date(2022,3,3);
+  let today = new Date();//Date(2022,3,5);
   let todayConnection = new Date(Number(today)-1000*60*10); //today - 10 minutes
   let nextDay = new Date(today.getFullYear(),today.getMonth(),today.getDate()+1);
   let firstDayOfTheWeek = new Date(today.getFullYear(),today.getMonth(),today.getDate()-today.getDay());
